@@ -900,65 +900,8 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--Validation js-->
-    <script src="/js/validation.js"></script>
+    <script src="js/validation.js"></script>
 
-    <!-- <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxsnOsHZf0iAFa_ozrxFhjV1HbqMuxizSNBbiFyJOP5tkrVqkHvZ5j6LMrFZZEYhQ1t/exec";
-      const form = document.forms["submit-form"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            console.log("Success!", response);
-
-            const Toast = Swal.mixin({
-              toast: true,
-              position: "top-end",
-              showConfirmButton: false,
-              timer: 3000,
-              timerProgressBar: true,
-              didOpen: (toast) => {
-                toast.addEventListener("mouseenter", Swal.stopTimer);
-                toast.addEventListener("mouseleave", Swal.resumeTimer);
-              },
-            });
-
-            Toast.fire({
-              icon: "success",
-              title: "Form Submitted Successfully",
-            });
-
-
-           setTimeout(function(){
-            location.reload();
-           },3000)
-          })
-          .catch((error) => {
-            console.error("Error!", error.message);
-
-
-            const Toast = Swal.mixin({
-              toast: true,
-              position: "top-end",
-              showConfirmButton: false,
-              timer: 3000,
-              timerProgressBar: true,
-              didOpen: (toast) => {
-                toast.addEventListener("mouseenter", Swal.stopTimer);
-                toast.addEventListener("mouseleave", Swal.resumeTimer);
-              },
-            });
-
-            Toast.fire({
-              icon: "error",
-              title: "Something Went Wrong",
-            });
-
-            
-          });
-      });
-    </script> -->
+   
   </body>
 </html>
